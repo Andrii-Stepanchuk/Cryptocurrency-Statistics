@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Document("cryptocurrency")
 public class CryptoItem {
@@ -62,6 +63,19 @@ public class CryptoItem {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CryptoItem that = (CryptoItem) o;
+        return Double.compare(that.price, price) == 0 && Objects.equals(id, that.id) && Objects.equals(curr1, that.curr1) && Objects.equals(curr2, that.curr2) && Objects.equals(createdAt, that.createdAt);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, curr1, curr2, price, createdAt);
     }
 
     @Override

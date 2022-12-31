@@ -1,6 +1,5 @@
 package ua.stepanchuk.ToDoApp.service.impl;
 
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -8,12 +7,9 @@ import org.springframework.stereotype.Service;
 import ua.stepanchuk.ToDoApp.model.CryptoItem;
 import ua.stepanchuk.ToDoApp.repository.CryptoItemRepository;
 import ua.stepanchuk.ToDoApp.service.CryptoItemService;
-import ua.stepanchuk.ToDoApp.util.JsonUtil;
-import ua.stepanchuk.ToDoApp.util.RequestSender;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
-
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
 
 @Service
 public class CryptoItemServiceImpl implements CryptoItemService {
@@ -48,17 +44,17 @@ public class CryptoItemServiceImpl implements CryptoItemService {
 
     @PostConstruct
     private void dataBaseInit() {
-        String jsonBTC = RequestSender.sendHttpPostRequest(BTC, USD);
-        List<CryptoItem> cryptoBTCItems = JsonUtil.JsonToCryptoItem(BTC, USD, jsonBTC);
-        cryptoItemRepository.saveAll(cryptoBTCItems);
-
-        String jsonETH = RequestSender.sendHttpPostRequest(ETH, USD);
-        List<CryptoItem> cryptoETHItems = JsonUtil.JsonToCryptoItem(ETH, USD, jsonETH);
-        cryptoItemRepository.saveAll(cryptoETHItems);
-
-        String jsonXRP = RequestSender.sendHttpPostRequest(XRP, USD);
-        List<CryptoItem> cryptoXRPItems = JsonUtil.JsonToCryptoItem(XRP, USD, jsonXRP);
-        cryptoItemRepository.saveAll(cryptoXRPItems);
+//        String jsonBTC = RequestSender.sendHttpPostRequest(BTC, USD);
+//        List<CryptoItem> cryptoBTCItems = JsonUtil.JsonToCryptoItems(BTC, USD, jsonBTC);
+//        cryptoItemRepository.saveAll(cryptoBTCItems);
+//
+//        String jsonETH = RequestSender.sendHttpPostRequest(ETH, USD);
+//        List<CryptoItem> cryptoETHItems = JsonUtil.JsonToCryptoItems(ETH, USD, jsonETH);
+//        cryptoItemRepository.saveAll(cryptoETHItems);
+//
+//        String jsonXRP = RequestSender.sendHttpPostRequest(XRP, USD);
+//        List<CryptoItem> cryptoXRPItems = JsonUtil.JsonToCryptoItems(XRP, USD, jsonXRP);
+//        cryptoItemRepository.saveAll(cryptoXRPItems);
     }
 
 }

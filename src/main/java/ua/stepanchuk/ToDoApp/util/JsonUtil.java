@@ -16,7 +16,7 @@ public class JsonUtil {
     private static final String PRICE = "price";
     private static final String TMSP = "tmsp";
 
-    public static List<CryptoItem> JsonToCryptoItem(String curr1, String curr2, String json) {
+    public static List<CryptoItem> JsonToCryptoItems(String curr1, String curr2, String json) {
         List<CryptoItem> cryptoItems = new ArrayList<>();
 
         JSONArray jsonarray = new JSONArray(json);
