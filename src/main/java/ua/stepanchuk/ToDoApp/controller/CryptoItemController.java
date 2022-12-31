@@ -1,9 +1,12 @@
 package ua.stepanchuk.ToDoApp.controller;
 
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
@@ -14,15 +17,16 @@ import ua.stepanchuk.ToDoApp.service.CsvExportService;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
 
+@Validated
 @RestController
 @RequestMapping("/cryptocurrencies")
-@Validated
 public class CryptoItemController {
 
     private final CryptoItemService cryptoItemService;

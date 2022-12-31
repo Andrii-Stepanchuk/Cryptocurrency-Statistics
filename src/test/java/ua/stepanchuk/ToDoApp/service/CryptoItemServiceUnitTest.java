@@ -40,8 +40,7 @@ class CryptoItemServiceUnitTest {
     @ParameterizedTest
     @MethodSource("prices")
     void getMinPriceTest(double price, String cryptocurrency) {
-        CryptoItem expected = new CryptoItem();
-        expected.setPrice(price);
+        CryptoItem expected = new CryptoItem(BTC, USD, price, LocalDateTime.now());
 
         Mockito.when(cryptoItemRepo.findTopByCurr1OrderByPriceAsc(cryptocurrency))
                 .thenReturn(Optional.of(expected));
@@ -63,8 +62,7 @@ class CryptoItemServiceUnitTest {
     @ParameterizedTest
     @MethodSource("prices")
     void getMaxPriceTest(double price, String cryptocurrency) {
-        CryptoItem expected = new CryptoItem();
-        expected.setPrice(price);
+        CryptoItem expected = new CryptoItem(BTC, USD, price, LocalDateTime.now());
 
         Mockito.when(cryptoItemRepo.findTopByCurr1OrderByPriceDesc(cryptocurrency))
                 .thenReturn(Optional.of(expected));
