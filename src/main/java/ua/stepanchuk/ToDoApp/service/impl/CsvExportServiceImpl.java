@@ -34,7 +34,7 @@ public class CsvExportServiceImpl implements CsvExportService {
                 printer.printRecord(currency, minPrice.getPrice(), maxPrice.getPrice());
             }
         } catch (IOException | NoSuchElementException e){
-            throw new CreateCSVException();
+            throw new CreateCSVException(e);
         }
     }
 }
