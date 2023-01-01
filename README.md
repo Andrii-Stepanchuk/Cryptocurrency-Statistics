@@ -1,10 +1,10 @@
-##Technology stack
+## Technology stack
 - Java 11+
 - String Boot, Spring Data.
 - MongoDB.
 
 
-##Task: 
+## Task: 
 1. Collect data.\
    You need to fetch cryptocurrency data prices from CEX.IO. For this task you should pull last prices for the following pairs: BTC/USD, ETH/USD and XRP/USD. This data should be stored in database, since you will use this data in the next two parts of the task. Feel free to store any additional information to database like 'createdAt' date etc.
 2. Rest Endpoints.\
