@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.service;
+package ua.stepanchuk.cryptocurrencyStatistics.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,27 +10,24 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
-import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.repository.CryptoItemRepository;
-import ua.stepanchuk.ToDoApp.service.impl.CsvExportServiceImpl;
+import ua.stepanchuk.cryptocurrencyStatistics.exception.CreateCSVException;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.repository.CryptoItemRepository;
+import ua.stepanchuk.cryptocurrencyStatistics.service.impl.CsvExportServiceImpl;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Locale;
-import java.util.NoSuchElementException;
 import java.util.Optional;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)

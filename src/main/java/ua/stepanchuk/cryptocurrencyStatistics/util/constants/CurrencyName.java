@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.util.constants;
+package ua.stepanchuk.cryptocurrencyStatistics.util.constants;
 
 /**
  * CurrencyName is a final class with currency constants

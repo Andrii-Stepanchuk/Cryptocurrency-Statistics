@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.controller;
+package ua.stepanchuk.cryptocurrencyStatistics.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.service.CryptoItemService;
-import ua.stepanchuk.ToDoApp.service.CsvExportService;
+import ua.stepanchuk.cryptocurrencyStatistics.exception.CreateCSVException;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CryptoItemService;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CsvExportService;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.Min;
@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
 
 /**
  * Controller for endpoints according to the task

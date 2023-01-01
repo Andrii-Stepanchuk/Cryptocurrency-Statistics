@@ -1,6 +1,6 @@
-package ua.stepanchuk.ToDoApp.service;
+package ua.stepanchuk.cryptocurrencyStatistics.service;
 
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package ua.stepanchuk.ToDoApp.service;
+package ua.stepanchuk.cryptocurrencyStatistics.service;
 
-import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
+import ua.stepanchuk.cryptocurrencyStatistics.exception.CreateCSVException;
 
 import java.io.Writer;
 import java.util.List;

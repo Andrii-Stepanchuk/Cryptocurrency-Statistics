@@ -1,13 +1,13 @@
-package ua.stepanchuk.ToDoApp.service.impl;
+package ua.stepanchuk.cryptocurrencyStatistics.service.impl;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.repository.CryptoItemRepository;
-import ua.stepanchuk.ToDoApp.service.CsvExportService;
+import ua.stepanchuk.cryptocurrencyStatistics.exception.CreateCSVException;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.repository.CryptoItemRepository;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CsvExportService;
 
 import java.io.IOException;
 import java.io.Writer;

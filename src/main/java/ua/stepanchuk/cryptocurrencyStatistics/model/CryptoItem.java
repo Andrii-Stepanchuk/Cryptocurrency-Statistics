@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.model;
+package ua.stepanchuk.cryptocurrencyStatistics.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

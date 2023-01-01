@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.service;
+package ua.stepanchuk.cryptocurrencyStatistics.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,9 +12,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.repository.CryptoItemRepository;
-import ua.stepanchuk.ToDoApp.service.impl.CryptoItemServiceImpl;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.repository.CryptoItemRepository;
+import ua.stepanchuk.cryptocurrencyStatistics.service.impl.CryptoItemServiceImpl;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -25,7 +25,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)

@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.exception;
+package ua.stepanchuk.cryptocurrencyStatistics.exception;
 
 /**
  * CreateCSVException is custom Exception for writeCryptoItemsToCsv method in CsvExportServiceImpl

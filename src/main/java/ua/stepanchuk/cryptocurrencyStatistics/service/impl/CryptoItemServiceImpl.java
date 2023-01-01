@@ -1,19 +1,19 @@
-package ua.stepanchuk.ToDoApp.service.impl;
+package ua.stepanchuk.cryptocurrencyStatistics.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.repository.CryptoItemRepository;
-import ua.stepanchuk.ToDoApp.service.CryptoItemService;
-import ua.stepanchuk.ToDoApp.util.JsonUtil;
-import ua.stepanchuk.ToDoApp.util.RequestSender;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.repository.CryptoItemRepository;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CryptoItemService;
+import ua.stepanchuk.cryptocurrencyStatistics.util.JsonUtil;
+import ua.stepanchuk.cryptocurrencyStatistics.util.RequestSender;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
 
 /**
  * CryptoItemServiceImpl is a service class that interacts with the repository

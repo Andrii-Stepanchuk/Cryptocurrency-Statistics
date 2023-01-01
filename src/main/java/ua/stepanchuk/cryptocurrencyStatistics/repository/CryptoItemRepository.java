@@ -1,8 +1,8 @@
-package ua.stepanchuk.ToDoApp.repository;
+package ua.stepanchuk.cryptocurrencyStatistics.repository;
 
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
 
 import java.util.List;
 import java.util.Optional;

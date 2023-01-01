@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.util;
+package ua.stepanchuk.cryptocurrencyStatistics.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;

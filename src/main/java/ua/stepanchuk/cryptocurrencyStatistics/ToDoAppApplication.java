@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp;
+package ua.stepanchuk.cryptocurrencyStatistics;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

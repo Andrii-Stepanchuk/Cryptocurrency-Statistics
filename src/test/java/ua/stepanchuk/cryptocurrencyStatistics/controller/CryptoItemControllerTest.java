@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.controller;
+package ua.stepanchuk.cryptocurrencyStatistics.controller;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,18 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.web.util.NestedServletException;
-import ua.stepanchuk.ToDoApp.exception.CreateCSVException;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
-import ua.stepanchuk.ToDoApp.service.CryptoItemService;
-import ua.stepanchuk.ToDoApp.service.CsvExportService;
-import ua.stepanchuk.ToDoApp.service.impl.CsvExportServiceImpl;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CryptoItemService;
+import ua.stepanchuk.cryptocurrencyStatistics.service.CsvExportService;
 
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +29,7 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
 
 
 @WebMvcTest(CryptoItemController.class)

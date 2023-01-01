@@ -1,4 +1,4 @@
-package ua.stepanchuk.ToDoApp.util;
+package ua.stepanchuk.cryptocurrencyStatistics.util;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -7,8 +7,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.*;
-import static ua.stepanchuk.ToDoApp.util.constants.CurrencyName.USD;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.*;
+import static ua.stepanchuk.cryptocurrencyStatistics.util.constants.CurrencyName.USD;
 
 class RequestSenderTest {
 

@@ -1,8 +1,8 @@
-package ua.stepanchuk.ToDoApp.util;
+package ua.stepanchuk.cryptocurrencyStatistics.util;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import ua.stepanchuk.ToDoApp.model.CryptoItem;
+import ua.stepanchuk.cryptocurrencyStatistics.model.CryptoItem;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
