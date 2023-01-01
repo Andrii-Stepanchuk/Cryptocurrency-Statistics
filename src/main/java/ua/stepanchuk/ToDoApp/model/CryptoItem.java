@@ -6,6 +6,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+/**
+ * CryptoItem is an entity that represents an object from the database
+ *
+ * @author Andrii Stepanchuk
+ */
+
 @Document("cryptocurrency")
 public class CryptoItem {
 

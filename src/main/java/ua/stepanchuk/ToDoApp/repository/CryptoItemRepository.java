@@ -7,6 +7,12 @@ import ua.stepanchuk.ToDoApp.model.CryptoItem;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * CryptoItemRepository interface
+ *
+ * @author Andrii Stepanchuk
+ */
+
 public interface CryptoItemRepository extends MongoRepository<CryptoItem, String> {
 
     Optional<CryptoItem> findTopByCurr1OrderByPriceAsc(String curr1);

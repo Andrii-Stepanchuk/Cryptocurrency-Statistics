@@ -1,5 +1,11 @@
 package ua.stepanchuk.ToDoApp.util.constants;
 
+/**
+ * CurrencyName is a final class with currency constants
+ *
+ * @author Andrii Stepanchuk
+ */
+
 public final class CurrencyName {
 
     public static final String BTC = "BTC";

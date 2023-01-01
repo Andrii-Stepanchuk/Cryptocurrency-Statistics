@@ -1,6 +1,5 @@
 package ua.stepanchuk.ToDoApp.util;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -16,7 +15,7 @@ class RequestSenderTest {
     @ParameterizedTest
     @MethodSource("currencyPairs")
     void sendHttpPostRequest(String cryptocurrency, String currency) {
-        assertNotNull(RequestSender.sendHttpPostRequest(cryptocurrency, currency));
+        assertNotNull(RequestSender.sendHttpPostRequestPriceStatsOnCexIO(cryptocurrency, currency));
     }
 
     public static Stream<Arguments> currencyPairs() {

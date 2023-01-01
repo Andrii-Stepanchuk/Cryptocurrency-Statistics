@@ -1,6 +1,12 @@
 package ua.stepanchuk.ToDoApp.exception;
 
-public class CreateCSVException extends Exception{
+/**
+ * CreateCSVException is custom Exception for writeCryptoItemsToCsv method in CsvExportServiceImpl
+ *
+ * @author Andrii Stepanchuk
+ */
+
+public class CreateCSVException extends Exception {
 
     public CreateCSVException() {
         super();

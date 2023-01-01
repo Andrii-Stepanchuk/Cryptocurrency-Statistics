@@ -14,6 +14,12 @@ import java.io.Writer;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * CsvExportServiceImpl is a service class that interacts with the repository for сryptocurrency report
+ *
+ * @author Andrii Stepanchuk
+ */
+
 @Service
 public class CsvExportServiceImpl implements CsvExportService {
 
@@ -23,6 +29,15 @@ public class CsvExportServiceImpl implements CsvExportService {
     public CsvExportServiceImpl(CryptoItemRepository cryptoItemRepository) {
         this.cryptoItemRepository = cryptoItemRepository;
     }
+
+    /**
+     * writeCryptoItemsToCsv method creates a csv report with the following fields:
+     * Cryptocurrency Name, Min Price, Max Price.
+     *
+     * @param cryptocurrencies list of cryptocurrencies for which a report is required
+     * @param writer any child class Writer that will generate a report to a file
+     * @throws CreateCSVException if an error occurred while generating the report
+     */
 
     public void writeCryptoItemsToCsv(List<String> cryptocurrencies, Writer writer) throws CreateCSVException {
         try {

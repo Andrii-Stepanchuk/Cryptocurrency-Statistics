@@ -10,9 +10,24 @@ import java.util.stream.Collectors;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
+/**
+ * RequestSender is an util class to send requests to other services (like CEX.IO)
+ *
+ * @author Andrii Stepanchuk
+ */
+
 public class RequestSender {
 
-    public static String sendHttpPostRequest(String curr1, String curr2) {
+    /**
+     * sendHttpPostRequestPriceStatsOnCexIo method sends a post request to the io shop service to get cryptocurrency
+     * data statistics for the last 24 hours
+     *
+     * @param curr1 the first cryptocurrency
+     * @param curr2 the second cryptocurrency
+     * @return String with data in JSON format
+     */
+
+    public static String sendHttpPostRequestPriceStatsOnCexIO(String curr1, String curr2) {
         HttpURLConnection http;
 
         try {
@@ -37,6 +52,13 @@ public class RequestSender {
 
         return getResponseStringFromHttp(http);
     }
+
+    /**
+     * getResponseStringFromHttp method receives data from http and converts to String
+     *
+     * @param http the first cryptocurrency
+     * @return String with data in JSON format
+     */
 
     private static String getResponseStringFromHttp(HttpURLConnection http) {
         String response;
