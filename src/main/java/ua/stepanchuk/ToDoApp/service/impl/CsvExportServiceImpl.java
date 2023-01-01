@@ -17,7 +17,7 @@ import java.util.NoSuchElementException;
 @Service
 public class CsvExportServiceImpl implements CsvExportService {
 
-    private final CryptoItemRepository cryptoItemRepository;
+    private CryptoItemRepository cryptoItemRepository;
 
     @Autowired
     public CsvExportServiceImpl(CryptoItemRepository cryptoItemRepository) {
